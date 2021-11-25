@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>about</title>
+</head>
+
+
+<body>
+        
+
+  <div class = 'header'>
+    <div class = about>
+    <p id='name'>Имя:</p>
+    <p id='lastname'>Фамилия:</p>
+    <p id='age'>Возраст:</p>
+    <p id='spec'>Спец:</p>
+    <p id='birthday'>Дата:</p>
+    <p id='about'>Обо мне:</p>
+    <button onclick ='test()' class="y">Update</button>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="icon facebook">
+    <div class="tooltip">Facebook</div>
+    <span><i class="fab fa-facebook-f"></i></span>
+  </div>
+  <div class="icon twitter">
+    <div class="tooltip">Twitter</div>
+    <span><i class="fab fa-twitter"></i></span>
+  </div>
+  <div class="icon instagram">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fab fa-instagram"></i></span>
+  </div>
+  <div class="icon github">
+    <div class="tooltip">Github</div>
+    <span><i class="fab fa-github"></i></span>
+  </div>
+  <div class="icon youtube">
+    <div class="tooltip">Youtube</div>
+    <span><i class="fab fa-youtube"></i></span>
+  </div>
+</div>
+
+    <script>
+
+        function test() {
+            let name = prompt('Как вас зовут');
+            document.getElementById('name').textContent = "Имя: " + name
+
+            let lastname = prompt('Введите фамилию');
+            document.getElementById('lastname').textContent = "Фамилия: " + lastname
+
+            let age = prompt('Введите возраст');
+            document.getElementById('age').textContent = "Возраст: " + age
+
+            let spec = prompt('Ваша специальность');
+            document.getElementById('spec').textContent = "Спец: " + spec
+
+            let birthday = prompt('Дата рождения');
+            document.getElementById('birthday').textContent = "Дата: " + birthday
+
+            let about = prompt('Расскажите о себе');
+            document.getElementById('about').textContent = "Обо мне: " + about
+
+
+
+        }
+
+    </script>
+</body> 
+
+
+
+
+
+
+
+
+
